@@ -21,10 +21,10 @@
             }
         },
         "web": {
+            "bundler": "metro",
             "favicon": "./assets/favicon.png"
         },
         "plugins": ["expo-router"],
-        "host": "localhost",
         "experiments": {
             "typedRoutes": true
         }
