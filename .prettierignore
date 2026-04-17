@@ -1,0 +1,15 @@
+# Dependencies & Build
+node_modules/
+dist/
+build/
+out/
+.next/
+
+# Cache & Expo
+.cache/
+.expo/
+coverage/
+*.min.js
+*.min.css
+*.map
+.pnpm-store/

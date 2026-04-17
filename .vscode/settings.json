@@ -1,0 +1,22 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit",
+        "source.sortMembers": "explicit"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/.expo": true,
+        "**/.git": true,
+        "**/coverage": true,
+        "**/dist": true,
+        "**/.cache": true
+    },
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/.expo/**": true,
+        "**/.git/**": true,
+        "**/coverage/**": true
+    }
+}
