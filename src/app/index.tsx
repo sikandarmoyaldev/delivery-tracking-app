@@ -1,36 +1,46 @@
-// src/app/index.tsx
+import { View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Text } from "@/components/ui/text";
-import { View } from "react-native";
-// 1. Import useColorScheme from nativewind
-import { useColorScheme } from "nativewind";
+
+import { useAppStore } from "@/lib/store";
+import { router } from "expo-router";
 
 export default function HomeScreen() {
-    // 2. Use the nativewind hook instead of local state + Appearance
-    const { colorScheme, setColorScheme } = useColorScheme();
-    const isDark = colorScheme === "dark";
-
-    const toggleTheme = () => {
-        const next = isDark ? "light" : "dark";
-        // 3. This updates both the UI classes and the internal theme state
-        setColorScheme(next);
-    };
+    const { setIsDriverMode } = useAppStore();
 
     return (
-        <View className="flex-1 bg-background justify-center items-center p-6 gap-4">
-            <Text variant="h1" className="text-foreground text-center text-3xl font-bold">
-                {isDark ? "🌙 Dark Mode" : "☀️ Light Mode"}
-            </Text>
+        <SafeAreaView className="flex-1 bg-background">
+            <Navbar title="Delivery Tracker V1" />
 
-            <Text className="text-muted-foreground text-center">
-                Background, text, and navigation theme will switch instantly.
-            </Text>
-
-            <Button onPress={toggleTheme} className="mt-4 bg-primary">
-                <Text className="text-primary-foreground font-semibold">
-                    {isDark ? "Switch to Light" : "Switch to Dark"}
+            <View className="flex-1 items-center justify-center gap-6 p-6">
+                <Text className="text-2xl font-semibold text-foreground text-center">
+                    Select Your Role
                 </Text>
-            </Button>
-        </View>
+
+                <Button
+                    className="w-full"
+                    onPress={() => {
+                        setIsDriverMode(true);
+                        router.push("/driver");
+                    }}
+                >
+                    <Text className="text-primary-foreground text-lg">🚚 Driver Mode</Text>
+                </Button>
+
+                <Button
+                    variant="outline"
+                    className="w-full"
+                    onPress={() => {
+                        setIsDriverMode(false);
+                        router.push("/customer");
+                    }}
+                >
+                    <Text className="text-foreground text-lg">👤 Customer Mode</Text>
+                </Button>
+            </View>
+        </SafeAreaView>
     );
 }
