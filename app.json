@@ -1,7 +1,7 @@
 {
     "expo": {
-        "name": "todolist-app",
-        "slug": "todolist-app",
+        "name": "delivery-tracking-app",
+        "slug": "delivery-tracking-app",
         "version": "1.0.0",
         "scheme": "todolistapp",
         "orientation": "portrait",
