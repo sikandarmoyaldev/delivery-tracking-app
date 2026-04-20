@@ -34,6 +34,9 @@ importers:
             nativewind:
                 specifier: ^4.2.3
                 version: 4.2.3(react-native-reanimated@4.1.7(react-native-worklets@0.8.1(@babel/core@7.29.0)(@react-native/metro-config@0.85.1(@babel/core@7.29.0))(react-native@0.81.5(@babel/core@7.29.0)(@react-native/metro-config@0.85.1(@babel/core@7.29.0))(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.29.0)(@react-native/metro-config@0.85.1(@babel/core@7.29.0))(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native-safe-area-context@5.6.2(react-native@0.81.5(@babel/core@7.29.0)(@react-native/metro-config@0.85.1(@babel/core@7.29.0))(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.29.0)(@react-native/metro-config@0.85.1(@babel/core@7.29.0))(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17)
+            polyline:
+                specifier: ^0.2.0
+                version: 0.2.0
             react:
                 specifier: 19.1.0
                 version: 19.1.0
@@ -4719,6 +4722,13 @@ packages:
                 integrity: sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==,
             }
         engines: { node: ">=4.0.0" }
+
+    polyline@0.2.0:
+        resolution:
+            {
+                integrity: sha512-rCJSkIHWZ/HOUoEWgjZ1DrRjLpTeTjgaktyJV0yhm8PugM5sKoavNjUHtI/amjsTn/Tq+Q3IIAuBD/dUSsWwxQ==,
+            }
+        deprecated: "This module is now under the @mapbox namespace: install @mapbox/polyline instead"
 
     postcss-import@15.1.0:
         resolution:
@@ -9629,6 +9639,8 @@ snapshots:
             xmlbuilder: 15.1.1
 
     pngjs@3.4.0: {}
+
+    polyline@0.2.0: {}
 
     postcss-import@15.1.0(postcss@8.5.10):
         dependencies:
