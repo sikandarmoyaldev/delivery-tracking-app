@@ -2,6 +2,33 @@
 
 > **⚠️ Proof of Concept (POC)** — This is a minimal demo to validate real-time GPS tracking + route visualization. Not production-ready. No backend. No auth. Just the core idea.
 
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <strong>Home Screen</strong><br>
+      <img src="./screenshots/home.png" width="200" alt="Home Screen"/><br>
+      <em>Select Driver or Customer mode</em>
+    </td>
+    <td align="center">
+      <strong>Home Screen (Dark)</strong><br>
+      <img src="./screenshots/home-dark.png" width="200" alt="Home Dark Mode"/><br>
+      <em>Dark mode toggle in navbar</em>
+    </td>
+    <td align="center">
+      <strong>Driver Tracking</strong><br>
+      <img src="./screenshots/drive.png" width="200" alt="Driver Screen"/><br>
+      <em>Real-time GPS tracking with OSRM</em>
+    </td>
+    <td align="center">
+      <strong>Customer View</strong><br>
+      <img src="./screenshots/customer.png" width="200" alt="Customer Screen"/><br>
+      <em>Live driver location (V2 placeholder)</em>
+    </td>
+  </tr>
+</table>
+
 ## ✨ Features (What Works Now)
 
 - 📍 **Real-time GPS Tracking** - Driver location updates automatically
@@ -91,10 +118,10 @@ delivery-tracking-app/
 
 Your Location (in `driver.tsx`)
 
-```bash
+```tsx
 const HOME_COORDS = {
-    latitude: 25.8356131,   // Your destination latitude
-    longitude: 72.2559479,  // Your destination longitude
+    latitude: 25.8356131, // Your destination latitude
+    longitude: 72.2559479, // Your destination longitude
 };
 ```
 
