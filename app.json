@@ -3,6 +3,7 @@
         "name": "todolist-app",
         "slug": "todolist-app",
         "version": "1.0.0",
+        "scheme": "todolistapp",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "userInterfaceStyle": "light",

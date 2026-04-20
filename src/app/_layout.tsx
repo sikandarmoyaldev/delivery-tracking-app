@@ -15,7 +15,7 @@ export default function RootLayout() {
             <StatusBar style={colorScheme === "dark" ? "light" : "dark"} />
 
             {/* ✅ Apply bg-background to root View */}
-            <View className="dark flex-1 bg-background">
+            <View className="flex-1 bg-background">
                 <Stack screenOptions={{ headerShown: false }} />
                 <PortalHost />
             </View>
