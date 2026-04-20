@@ -3,7 +3,7 @@
         "name": "delivery-tracking-app",
         "slug": "delivery-tracking-app",
         "version": "1.0.0",
-        "scheme": "todolistapp",
+        "scheme": "deliverytrackingapp",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "userInterfaceStyle": "light",
@@ -13,13 +13,18 @@
             "backgroundColor": "#ffffff"
         },
         "ios": {
-            "supportsTablet": true
+            "supportsTablet": true,
+            "infoPlist": {
+                "NSLocationWhenInUseUsageDescription": "Delivery Tracker needs your location to show your live route on the map.",
+                "NSLocationAlwaysAndWhenInUseUsageDescription": "Delivery Tracker needs your location to track your route even when the app runs in the background."
+            }
         },
         "android": {
             "adaptiveIcon": {
                 "foregroundImage": "./assets/adaptive-icon.png",
                 "backgroundColor": "#ffffff"
-            }
+            },
+            "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
         },
         "web": {
             "bundler": "metro",
